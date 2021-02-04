@@ -33,7 +33,7 @@ public class MenuProcessor {
       System.out.println("4 - Search people by filters");
       System.out.println("5 - List people");
       System.out.println("6 - List Companies");
-      option = sc.next();
+      option = sc.nextLine();
       switch (option) {
         case "0":
           break;
@@ -76,13 +76,13 @@ public class MenuProcessor {
       System.out.println("For add a name filter press 1");
       System.out.println("For add city filter press 2");
       System.out.println("For stop adding filters press 0");
-      s = sc.next();
+      s = sc.nextLine();
       if (s.equals("1")) {
         System.out.println("add the name you want to filter by");
-        filterInterfaces.add(new FilterByName(sc.next()));
+        filterInterfaces.add(new FilterByName(sc.nextLine()));
       } else if (s.equals("2")) {
         System.out.println("add the city you want to filter by");
-        filterInterfaces.add(new FilterByCity(sc.next()));
+        filterInterfaces.add(new FilterByCity(sc.nextLine()));
       }
       System.out.println(personService.findAllByFilters(filterInterfaces));
     }
@@ -90,13 +90,13 @@ public class MenuProcessor {
 
   private void addPerson(Scanner sc) {
     System.out.println("Insert name");
-    String name = sc.next();
+    String name = sc.nextLine();
     System.out.println("Insert city");
-    String city = sc.next();
+    String city = sc.nextLine();
     System.out.println("Insert dni");
-    String dni = sc.next();
+    String dni = sc.nextLine();
     System.out.println("Insert number");
-    String number = sc.next();
+    String number = sc.nextLine();
     try {
       System.out.println(
           personService.addPerson(
@@ -108,9 +108,9 @@ public class MenuProcessor {
 
   private void addCompany(Scanner sc) {
     System.out.println("Company name");
-    String name = sc.next();
+    String name = sc.nextLine();
     System.out.println("Company cuit");
-    String cuit = sc.next();
+    String cuit = sc.nextLine();
     try {
       System.out.println(
           companyService.addCompany(Company.builder().name(name).cuit(cuit).build()));
@@ -123,9 +123,9 @@ public class MenuProcessor {
 
     try {
       System.out.println("Company cuit");
-      Company company = companyService.findByCuit(sc.next());
+      Company company = companyService.findByCuit(sc.nextLine());
       System.out.println("Person dni");
-      System.out.println(companyService.addPerson(company, sc.next()));
+      System.out.println(companyService.addPerson(company, sc.nextLine()));
     } catch (NoResultException notFoundException) {
       System.out.println(notFoundException);
     }
