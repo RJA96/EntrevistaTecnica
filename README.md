@@ -19,6 +19,5 @@ Implementación:
 - Para utilizar la agenda correr el método main y utilizar por consola.
 
 Menu:
-![Alt text](https://drive.google.com/file/d/1xIMtEoRs0XZN9w2TViyu0MSf3BtlyxB9/view?usp=sharing "menu")
-![ScreenShot](https://drive.google.com/file/d/1xIMtEoRs0XZN9w2TViyu0MSf3BtlyxB9/view?usp=sharing)
+![menu](https://i.gyazo.com/2be94b639ff7ed2dafbcfada3ab9b220.png "menu")
 
