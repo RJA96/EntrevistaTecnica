@@ -21,11 +21,10 @@ Implementación:
 Menu:
 -
 ![menu](https://i.gyazo.com/d2069b45a06139a451cc20f06b6620a6.png "menu")
-addPerson:
+addPerson:<br/>
 -
-
 ![addPerson](https://i.gyazo.com/2be94b639ff7ed2dafbcfada3ab9b220.png "addPerson")
-Filter by city:
+Filter by city:<br/>
 -
 
 ![filter](https://i.gyazo.com/18e5e3eddd1169b1cb00ce05d18e97d4.png "filter")
